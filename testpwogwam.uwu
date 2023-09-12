@@ -1,0 +1,23 @@
+fuwunction fibonacci_numbers(num) {
+    if num == 0 {
+        wetuwn 0
+    }
+    elif num == 1 {
+        wetuwn 1
+    }
+    else {
+        wetuwn fibonacci_numbers(num-2)+fibonacci_numbers(num-1)
+    }
+}
+
+vawiabwe fiwe = owpen("./numbew.txt").intewpwet()
+
+for l in fiwe {
+    vawiabwe mewsage = "Fibbonacci sequence for n=" + l.stwip()
+    vawiabwe list = [fibonacci_numbers(i) fow i in wange(0, int(l))]
+    
+    pwint(mewsage)
+    pwint(*list, sep=" ")
+    pwint('')
+}
+
